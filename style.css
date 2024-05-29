@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5em;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+}
+#logo{
+    width: 70px;
+    cursor: pointer;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.search-container {
+    display: flex;
+    max-width: 400px; 
+    margin: 20px auto;
+}
+
+.search-container input[type="search"] {
+    height: 2em; 
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    font-size: 1.2rem;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+.search-container input[type="search"]:focus{
+    transition: ease 0.8s;
+    background-color: #ccc;
+    
+}
+.search-container button[type="submit"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em; 
+    padding: 19px 20px;
+    background-color: #ff7b00; 
+    color: white; 
+    border: none;
+    border-radius: 0 20px 20px 0; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+.search-container button[type="submit"]:hover {
+    background-color: #f88809a6; 
+}
+.search-container img{
+    width: 20px;
+}
+#search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 208, 208);
+    padding: 0 5px 0 0;
+    border-radius: 10px;
+}
+#search img{
+    width: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: ease 0.8s;
+}
+a:hover{
+    border-top: #bf3000 solid 1px;
+    padding: 5px;
+    transition: ease 0.8s;
+    color: #bf3000d7;
+}
+/* CORPO DO SITE */
+.body{
+    background-color: #bf3000;
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: -2;
+}
+.fundo{
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* .vertical-line1{
+    position: absolute; 
+    top: 10%;
+    bottom: 10%; 
+    left: 0%; 
+    
+    width: 2px; 
+    background-color: rgb(255, 255, 255); 
+    content: "";
+    margin: 5em;
+} */
+.vertical-line2{
+    position: absolute; 
+    top: 10%;
+    bottom: 5%; 
+    left: 50%; 
+    width: 2px; 
+    background-color: rgb(255, 255, 255); 
+    content: "";
+}
+
+#fotosDesc{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    height: 100vh;
+    color: white;
+    width: 50%;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+#fotosDesc p{
+    text-align: center;
+    align-self: center;
+    font-family: "Oswald", sans-serif;
+}
+.imagens {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+/* .imagens img:nth-child(2),.imagens img:nth-child(3) {
+    border: black 1px solid;
+}*/
+.imagens img {
+    width: 30em;
+    height: auto; 
+    margin: 5px; 
+    transition: ease 0.8s;
+}
+.imagens img:hover{
+    transition: ease 0.8s;
+    opacity: 50%;
+
+} 
+#ofertas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+#ofertas p {
+    font-family: "Inria Serif", serif;
+    font-size: 5rem;
+    color: white;
+    margin-top: 50px;
+}
+#ofertas img{
+    width: 50em;
+    margin: 0;
+}
+/* RODAPÉ */
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    height: 3em;
+    padding: 0 20px 0 20px;
+}
+.footer img{
+    width: 25px;
+}
+.footer p{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
